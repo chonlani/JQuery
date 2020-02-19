@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+   </script>
+   <script>
+       $(document).ready(function(){
+           var counter = 0;
+           $("#hide").click(function(){
+               counter++ ;
+             $("p").hide(1000);
+             console.log(counter);
+             alert("element #test is now hidden");
+           });
+           $("#show").click(function(){
+             $("p").show(1000);
+           });
+       });
+   </script>
+</head>
+<body>
+    <h1> Test JQuery </h1>
+    <p>if you click on the "hide" button, I will disappear </p>
+    <p>if you click on the "hide" button, I will disappear </p>
+    <p>if you click on the "hide" button, I will disappear </p>
+
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+</body>
+</html> 
+
+ 
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#in1").keydown(function(event) {
+          $("#d1").html("Key: " + event.which);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    Enter : <input id="in1" type="text" />
+    <div id="d1">D1</div>
+  </body>
+</html> -->
+
+
