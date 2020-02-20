@@ -59,8 +59,11 @@
                 div.animate({left: '100px'}, "slow");
                 div.animate({fontSize: '3em'}, "slow");
         });
-        $("#flip").click(function(){
+        $("#d5").click(function(){
             $("#panel").slideDown(5000);
+        });
+        $("#buton13").click(function(){
+            $("#panel").stop();
         });
 
     });
@@ -91,7 +94,7 @@
     
     <button id="button13" > Stop </button>
     <div id="d5" style="width: 100px;height: 100px;background-color:plum;margin-top: 10px;">slide down</div>
-
+    <div id="panel" style="width: 100px;height: 100px;background-color:plum;margin-top: 50px;display: none;">Hello world!</div>
 
 </body>
 </html>
