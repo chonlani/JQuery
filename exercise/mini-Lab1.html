@@ -1,0 +1,20 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script>
+     $(document).ready(function(){
+       $("#n1").keydown(function(event){
+         $("#d1").html("key: "+ event.which);
+
+       });
+     });
+   </script>
+  </head>
+  <body>
+    
+    Enter : <input id = "in1" type="text">
+    <div id = "d1"> d1 </div>
+
+  </body>
+  </html>

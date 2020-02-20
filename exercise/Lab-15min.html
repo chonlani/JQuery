@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#button1").click(function(){
+                $("#d1").show(1000);
+        });
+            $("#button2").click(function(){
+                $("#d1").hide(1000);
+        });
+            $("#button3").click(function(){
+                $("#d2").fadeIn(500);
+        });
+            $("#button4").click(function(){
+                $("#d2").fadeOut(500);
+        });
+        $("#button5").click(function(){
+                $("#d3").slideDown("slow");
+        });
+        $("#button6").click(function(){
+                $("#d3").slideUp("slow");
+        });
+        $("#button7").click(function(){
+                $("#d4").animate({left: '250px'});
+        });
+        $("#button8").click(function(){
+                $("#d4").animate({
+                    opacity: "0.5",
+                    left : "250px",
+                    width : "300px",
+                    hitght : "300px"
+
+                });
+        });
+        $("#button9").click(function(){
+                $("#d4").animate({
+                    left: '250px',
+                    height: '+=150px',
+                    width: '+=150px'
+                });
+        });
+        $("#button10").click(function(){
+                $("#d4").animate({
+                     height: "toggle"
+                    
+                });
+        });
+        $("#button11").click(function(){
+                var div = $("#d4");
+                div.animate({height: '300px', opacity: '0.4'}, "slow");
+                div.animate({width: '300px', opacity: '0.8'}, "slow");
+                div.animate({height: '100px', opacity: '0.4'}, "slow");
+                div.animate({width: '100px', opacity: '0.8'}, "slow");
+        });
+        $("#button12").click(function(){
+                var div = $("#d4");
+                div.animate({left: '100px'}, "slow");
+                div.animate({fontSize: '3em'}, "slow");
+        });
+        $("#flip").click(function(){
+            $("#panel").slideDown(5000);
+        });
+
+    });
+
+    </script>
+</head>
+<body>
+    
+    <button id="button1"> Show </button>
+    <button id="button2"> Hide </button>
+    <div id="d1" style="width: 100px;height: 100px;background-color: yellowgreen;margin-top: 10px;"></div><br>
+
+    <button id="button3"> Fade-in </button>
+    <button id="button4"> Fade-out </button>
+    <div id="d2" style="width: 100px;height: 100px;background-color: salmon;margin-top: 10px;"></div><br>
+    
+    <button id="button5"> Slide-down </button>
+    <button id="button6"> Slide-up </button>
+    <div id="d3" style="width: 100px;height: 100px;background-color:orange;margin-top: 10px;"></div><br>
+
+    <button id="button7"> Animate 1 </button>
+    <button id="button8"> Animate 2 </button>
+    <button id="button9"> Animate 3 </button>
+    <button id="button10"> Animate 4 </button>
+    <button id="button11"> Animate 5 </button>
+    <button id="button12"> Animate 6 </button>
+    <div id="d4" style="width: 100px;height: 100px;background-color:paleturquoise;margin-top: 20px;position: relative;">Hello</div><br>
+    
+    <button id="button13" > Stop </button>
+    <div id="d5" style="width: 100px;height: 100px;background-color:plum;margin-top: 10px;">slide down</div>
+
+
+</body>
+</html>
+
+
+
+
